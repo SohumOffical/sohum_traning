@@ -1,0 +1,78 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/ui.css">
+
+</head>
+<body>
+        <header>
+            <h1>Register Here :)</h1>
+        </header>
+        <section>
+            
+            <div id="myform">
+                <form>
+                    <table>
+                        <tr>
+                            <td>Name:</td>
+                            <td>
+                                <input type="text" id="uname" maxlength="30">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td>
+                                <input type="email" id="uemail" maxlength="100">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>gender:</td>
+                            <td>
+                                <input id="genm" type="radio" value="male" name="gen">Male
+                                <input id="genf" type="radio" value="Female" name="gen">Female
+                                <input id="geno" type="radio" value="Other" name="gen">Other
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Select Your Country :</td>
+                            <td>
+                                <select id="cou">
+                                    <option>Select</option>
+                                    <option value="india">India</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input id="mcou" type="text" placeholder="Enter country">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input class="fbtn" id="btns" type="button" value="Submit">
+                                <input class="fbtn" id="btnr" type="reset" >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <h3 id="msg"></h3>
+                            </td>
+                        </tr>
+                    </table>    
+                </form>
+            </div>
+        </section>
+<footer>
+
+</footer>
+<script src="js/ui.js"></script>
+</body>
+</html> 

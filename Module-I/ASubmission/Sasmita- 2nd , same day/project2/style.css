@@ -1,0 +1,196 @@
+html {
+    height: auto;
+    background-image: linear-gradient(#FC5E55, #FA4083);
+   
+}
+
+body {
+    background-image: url(./images/image-lion-background.png);
+    background-position: top center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.125rem;
+}
+
+.container{
+    width: 1024px;
+    min-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    /* background-color: burlywood; */
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding-top: 20px;
+   padding-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+}
+.navbutton {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 11px 25px;
+    font-family: 'Playfair Display', serif;
+    display: inline-block;
+    position: relative;
+}
+.navbutton{
+    display: inline-block;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.navbutton:hover .dropdown {
+    display: block;
+}
+
+.dropdown .navbutton {
+    width: 120px;
+    background-color: white;
+}
+
+.dropdown .navbutton a {
+    color: #FA4083;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+main{  
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+}
+.main2{
+    /* min-height: 300px; */
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.inputwrapper{
+    margin-bottom: 30px;
+}
+input[type=name],input[type=email],textarea{
+    padding: 12px 20px;
+    width: 100%;
+    font-family: Roboto,sans-serif;
+    box-sizing: border-box;
+}
+.margine-right-a{
+    margin-right: 20px;
+}
+
+.newline{
+    display: block;
+    margin-bottom: 10px;
+}
+main .herobox1{
+    flex: 2;
+    padding-right: 100px;
+}
+.mybtn{
+    background-color: white;
+    font-family: 'Playfair Display', serif;
+    padding: 11px 25px;
+    border-color: white;
+    color: #FA4083;
+    }
+.mybtn:hover{
+    background-color: #FC5E55;
+    color: white;
+}
+main .herobox2{
+    flex: 1;
+}
+p{
+    line-height: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 2rem;
+}
+.card1{
+    background-image: url(./images/image-background-card1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+}
+.card2{
+    background-image: url(./images/image-background-card2.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+}
+.card3{
+    background-image: url(./images/image-background-card3.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+}
+h1 {
+    font-size: 3.25rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+}
+h2{
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    margin-top: 20px;
+}
+p {
+    line-height: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+/* .card1,.card2,.card3{
+    box-sizing: border-box;
+    padding: 30px 30px 20px 30px;
+} */
+.cards p{
+    line-height: 1.2rem;
+    font-size: 0.85rem;
+    margin: 10px 30px 20px 30px;
+   
+}
+.cards i{
+    font-size: 90px;
+    margin-bottom: 1px;
+    padding-top: 30px;
+}
+.cards h2{
+    color: white;
+    text-decoration: none;
+}
+.cards a{
+    text-decoration: none;
+    color: white;
+}
+
+.testimonials{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.tbox{
+    width: 47%;
+    padding: 50px;
+    border:1px solid white;
+    box-sizing: border-box;
+    margin-top: 50px;
+}

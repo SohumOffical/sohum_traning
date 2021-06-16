@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Login Example</title>
+    <style>
+        body{
+            background: url("img/background.jpg");
+            background-size: cover;
+            font-family: "Comic Sans MS",sans-serif;
+            color: white;
+        }
+        h1{
+            text-shadow: 3px 3px 2px red;
+        }
+        #form-div{
+            border: 3px solid red;
+            width: 400px;
+            text-align: center;
+            margin: auto;
+            margin-top:140px ;
+            padding: 20px;
+            box-shadow: 0 0 15px 2px black;
+        }
+        input[type='text'],input[type='password']{
+            padding: 7px;
+            margin: 7px;
+            border: none;
+            border: none;
+            outline: none;
+            background:transparent;
+            border-bottom: 2px solid red;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+
+        }
+        input[type='submit'],input[type='reset']{
+            border: none;
+            background-color: darkgrey;
+            padding: 7px 20px;
+            margin: 10px ;
+            font-size: 18px;
+            border-radius: 10px;
+
+            color: black;
+         }
+        input[type='text']:focus,input[type='password']:focus{
+            border-bottom: 3px solid darkgreen;
+            color: white;
+            text-shadow: 2px 2px black;
+        }
+        input[type='submit']:hover,input[type='reset']:hover{
+            box-shadow: 0 0 5px 3px red;
+            border: none;
+        }
+        ::placeholder{
+            color: white;
+            text-shadow: 3px 3px 2px black;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="form-div">
+        <form>
+            <h1>Login  Here</h1>
+            <input type="text" placeholder="User Name" required><br>
+            <input type="password" placeholder="Password" required><br>
+            <input type="submit" value="Login">
+            <input type="reset">
+        </form>
+    </div>
+
+
+</body>
+</html>

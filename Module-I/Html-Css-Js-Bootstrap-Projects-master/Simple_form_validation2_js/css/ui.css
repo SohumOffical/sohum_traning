@@ -1,0 +1,28 @@
+header h1{
+    text-align: center;
+    padding: 10px;
+    color: tomato;
+    border: 2px solid black;
+    width: 400px;
+    margin: 20px auto;
+}
+#myform{
+    border: 2px solid black;
+    width: 500px;
+    margin: 10px auto;
+    padding: 10px;
+}
+#myform table{
+    text-align: center;
+    width: 100%;
+}
+.fbtn{
+    margin-top: 10px;   
+}
+#msg{
+    margin-top:5px; 
+    color: red; 
+}
+#mcou{ 
+    display: none;
+}

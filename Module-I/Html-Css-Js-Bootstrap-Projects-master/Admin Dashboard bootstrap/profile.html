@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/css/fontawesome-all.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+<!--main Navigation-->
+<div id="main-navigation"></div>
+
+<!--Profile section-->
+<section class="bg-teal text-white p-2">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1><i class="fa fa-user-circle"></i> Profile</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Profile Button section-->
+<section class="p-2 mt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="index.html" class="btn btn-outline-secondary btn-block"><i class="fa fa-arrow-alt-circle-left"></i> Dashboard</a>
+            </div>
+            <div class="col-md-3">
+                <!--empty-->
+            </div>
+            <div class="col-md-3">
+                <a href="index.html" class="btn btn-outline-success btn-block" data-toggle="modal" data-target="#password-modal">
+                    <i class="fa fa-lock"></i> Change Password</a>
+            </div>
+            <div class="col-md-3">
+                <a href="index.html" class="btn btn-outline-danger btn-block"><i class="fa fa-window-close"></i> Delete Account</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Password Modal-->
+<div class="modal" id="password-modal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+                <h2>Change Password</h2>
+                <button class="close" data-dismiss="modal">
+                <i class="fa fa-window-close text-white"></i>
+                </button>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="password" placeholder="password" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Confirm Password" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-secondary" data-dismiss="modal">Close</a>
+                    <input type="submit" value="change password" class="btn btn-success">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--Main profile Section-->
+<section class="p-3 mt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-header bg-teal text-white">
+                        <h3>About Me</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="card card-body">
+                            <h3>Admin</h3>
+                        </div>
+                        <div class="card card-body mt-2">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, pariatur.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut commodi deserunt distinctio exercitationem facere quas, quisquam rerum veritatis voluptates?</p>
+                        </div>
+                        <div class="card card-body mt-2">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, velit!</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, vel, voluptate. Deleniti dicta excepturi facere fugiat maxime nemo odit quibusdam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class=" text-center text-warning">
+                    <i class="fa fa-user-circle fa fa-10x"></i>
+                </div>
+                <a href="#" class="btn btn-primary btn-block mt-3">Edit Image</a>
+                <a href="#" class="btn btn-danger btn-block mt-3">Delete Image</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Main Footer-->
+<div id="main-footer"></div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- BODY ENDS -->
+<script src="bootstrap/js/fontawesome-all.js"></script>
+<script src="bootstrap/js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/mdb.min.js"></script>
+<script src="https://cdn.ckeditor.com/4.8.0/standard/ckeditor.js"></script>
+<script src="script.js"></script>
+<script>
+    CKEDITOR.replace( 'editor1' );
+</script>
+</body>
+</html>

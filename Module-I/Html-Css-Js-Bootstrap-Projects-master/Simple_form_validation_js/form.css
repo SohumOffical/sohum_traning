@@ -1,0 +1,54 @@
+body{
+    font-family: "Comic Sans MS",SansSerif;
+    background: linear-gradient(to left,lightblue,#00b0ff,#0D47A1);
+    
+}
+h1{
+        color: whitesmoke;
+        text-align: center;
+}
+#main-form{
+    width: 500px;
+    border: 2px solid green;
+    text-align: center;
+    margin: 60px auto;
+    padding: 20px;
+    background: lightgreen;
+
+}
+input[type='text'],input[type='email'],input[type='password']{
+    margin: 7px;
+    padding: 5px;
+    width: 300px;
+    outline: none;
+    color: darkblue;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid #0D47A1;
+    text-align: center;
+    background: transparent;
+ }
+
+input[type='text']:focus,input[type='email']:focus,input[type='password']:focus{
+    border-bottom: 3px solid green;
+}
+input[type='button']{
+    padding: 7px 25px;
+    margin: 10px;
+    outline: none;
+    font-size: 18px;
+    background: none;
+    border: 2px solid dodgerblue;
+    color: #0D47A1;
+    margin-left: 200px;
+
+}
+input[type='button']:hover{
+    cursor: pointer;
+    background: dodgerblue;
+    color: whitesmoke;
+}
+#msg{
+    color: red;
+    font-size: 18px;
+}

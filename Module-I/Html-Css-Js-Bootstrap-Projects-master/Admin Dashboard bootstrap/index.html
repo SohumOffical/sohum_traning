@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/css/fontawesome-all.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+<!--Main navigation-->
+<div id="main-navigation"></div>
+
+<!--Dashboard section-->
+<section class="bg-teal p-2 text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1><i class="fa fa-chart-bar"></i>Dashboard</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Button section-->
+<section class="bg-light p-3 animated bounceInLeft">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 animated swing">
+                <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#post-modal"><i class="fa fa-plus-circle" ></i>ADD POST</a>
+            </div>
+            <div class="col-md-4 animated swing">
+                <a href="#" class="btn btn-success btn-block" data-toggle="modal" data-target="#category-modal"><i class="fa fa-plus-circle"></i>ADD CATEGORY</a>
+            </div>
+            <div class="col-md-4 animated swing">
+                <a href="#" class="btn btn-warning btn-block" data-toggle="modal" data-target="#add-user"><i class="fa fa-plus-circle"></i>ADD USER</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Post model-->
+<div class="modal animated jello" id="post-modal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                    <h3>Add Post</h3>
+                    <button class="close" data-dismiss="modal">
+                        <i class="fa fa-window-close text-white"></i>
+                    </button>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" placeholder="title" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Category</label>
+                        <select class="form-control">
+                            <option>Web Development</option>
+                            <option>Android Development</option>
+                            <option>Java Development</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Image Upload</label>
+                        <input type="file" class="form-control-file">
+                        <small class="text-muted">Max Size 3Mb</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Message Body</label>
+                        <textarea class="form-control" name="editor1"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-secondary" data-dismiss="modal">Close</a>
+                    <input type="submit" value="Add Post" class="btn btn-primary">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--Category modal-->
+<div class="modal animated jello" id="category-modal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+                <h3>Add Category</h3>
+                <button class="close" data-dismiss="modal">
+                    <i class="fa fa-window-close text-white"></i>
+                </button>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Category Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="date" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-secondary" data-dismiss="modal">Close</a>
+                   <input type="submit" value="Add category" class="btn btn-primary">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--Add user Modal-->
+<div class="modal animated swing" id="add-user">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content text-white">
+            <div class="modal-header bg-warning text-white">
+                <h3>Add user</h3>
+                <button data-dismiss="modal" class="close">
+                    <i class="fa fa-window-close text-white"></i>
+                </button>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="User Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="User Email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="password" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Conform Password" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-secondary" data-dismiss="modal">Close</a>
+                    <input type="submit" value="Add user" class="btn btn-primary">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--Main Content section-->
+<section class="p-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-header bg-secondary text-white">
+                        <h1>Latest Post</h1>
+                    </div>
+                    <div class="card-body">
+                        <table class="table">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Title</th>
+                                    <th>Category</th>
+                                    <th>Date Posted</th>
+                                    <th>Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Post One</td>
+                                    <td>Web Development</td>
+                                    <td>24,Aug,2018</td>
+                                    <td>
+                                        <a href="#" class="btn btn-outline-secondary btn-sm">Details<i class="fa fa-arrow-alt-circle-right"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Post Two</td>
+                                    <td>Android Development</td>
+                                    <td>24,Aug,2018</td>
+                                    <td>
+                                        <a href="#" class="btn btn-outline-secondary btn-sm">Details<i class="fa fa-arrow-alt-circle-right"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Post Three</td>
+                                    <td>Python Development</td>
+                                    <td>24,Aug,2018</td>
+                                    <td>
+                                        <a href="#" class="btn btn-outline-secondary btn-sm">Details<i class="fa fa-arrow-alt-circle-right"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Post Four</td>
+                                    <td>UI Development</td>
+                                    <td>24,Aug,2018</td>
+                                    <td>
+                                        <a href="#" class="btn btn-outline-secondary btn-sm">Details<i class="fa fa-arrow-alt-circle-right"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Post five</td>
+                                    <td>Java Development</td>
+                                    <td>24,Aug,2018</td>
+                                    <td>
+                                        <a href="#" class="btn btn-outline-secondary btn-sm">Details<i class="fa fa-arrow-alt-circle-right"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Post six</td>
+                                    <td>Web Development</td>
+                                    <td>24,Aug,2018</td>
+                                    <td>
+                                        <a href="#" class="btn btn-outline-secondary btn-sm">Details<i class="fa fa-arrow-alt-circle-right"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Post One</td>
+                                    <td>Web Development</td>
+                                    <td>24,Aug,2018</td>
+                                    <td>
+                                        <a href="#" class="btn btn-outline-secondary btn-sm">Details<i class="fa fa-arrow-alt-circle-right"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Post One</td>
+                                    <td>Web Development</td>
+                                    <td>24,Aug,2018</td>
+                                    <td>
+                                        <a href="#" class="btn btn-outline-secondary btn-sm">Details<i class="fa fa-arrow-alt-circle-right"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-header bg-primary text-white">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <i class="fa fa-list fa-4x"></i>
+                            </div>
+                            <div class="col">
+                                <h1 class="display-3">08</h1>
+                                <h1>Posts</h1>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <h5>
+                            <a href="post.html" class="text-primary">View Details<i class="fa fa-arrow-alt-circle-right"></i></a>
+                        </h5>
+
+                    </div>
+
+                </div>
+                <div class="card text-center mt-3">
+                    <div class="card-header bg-success text-white">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <i class="fa fa-list fa-4x"></i>
+                            </div>
+                            <div class="col">
+                                <h1 class="display-3">04</h1>
+                                <h6>Categories</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <h5>
+                            <a href="categories.html" class="text-success">View Details<i class="fa fa-arrow-alt-circle-right"></i></a>
+                        </h5>
+
+                    </div>
+
+                </div>
+                <div class="card text-center mt-3">
+                    <div class="card-header bg-warning text-white">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <i class="fa fa-list fa-4x"></i>
+                            </div>
+                            <div class="col">
+                                <h1 class="display-3">05</h1>
+                                <h6>Users</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <h5>
+                            <a href="user.html" class="text-warning">View Details<i class="fa fa-arrow-alt-circle-right"></i></a>
+                        </h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!--Main footer-->
+<div id="main-footer"></div>
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- BODY ENDS -->
+<script src="bootstrap/js/fontawesome-all.js"></script>
+<script src="bootstrap/js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/mdb.min.js"></script>
+<script src="https://cdn.ckeditor.com/4.8.0/standard/ckeditor.js"></script>
+<script src="script.js"></script>
+<script>
+    CKEDITOR.replace( 'editor1' );
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/css/fontawesome-all.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+<!-- Main Navigation -->
+<nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+    <div class="container">
+        <a href="index.html" class="navbar-brand text-warning">
+            <i class="fa fa-snowflake"></i> Admin</a>
+
+        <div class="collapse navbar-collapse" id="uiNavbar">
+        </div>
+    </div>
+</nav>
+
+<!--Dashboard section-->
+<section class="p-3 bg-teal text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2><i class="fa fa-snowflake"></i> Admin Dashboard</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Login section-->
+<section class="p-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <!--empty-->
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header bg-teal text-white">
+                        <h2>Login Here</h2>
+                    </div>
+                    <form>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <input type="text" placeholder="UserName" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="password" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="confirm password" class="form-control">
+                        </div>
+                    </div>
+                        <div class="card-footer">
+                            <a href="index.html" class="btn btn-teal btn-block">LOGIN</a>
+
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--Main Footer-->
+<div id="main-footer"></div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- BODY ENDS -->
+<script src="bootstrap/js/fontawesome-all.js"></script>
+<script src="bootstrap/js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/mdb.min.js"></script>
+<script src="https://cdn.ckeditor.com/4.8.0/standard/ckeditor.js"></script>
+<script src="script.js"></script>
+<script>
+    CKEDITOR.replace( 'editor1' );
+</script>
+</body>
+</html>

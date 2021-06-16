@@ -1,0 +1,164 @@
+body{
+    background-color:rgb(197, 197, 197);
+}
+.first-block{
+    background-image: url("code.jpg");
+    color: honeydew;
+    text-align: center;
+    font-weight: 3em;
+    font-size: 2em;
+    background-position: center;
+    background-size: cover;
+    
+    
+}
+.second-block{
+    text-align: center;
+    box-sizing: border-box;
+}
+.sub-panel{
+    background-color: rgb(8, 8, 8);
+    border-radius: 10px;
+    border: 1px solid snow;
+    padding: 15px 20px;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-content: space-between;
+    color: honeydew;
+
+}
+.laptop {
+    flex: 20%;
+    max-width: 25%;
+    padding: 5px 8px;
+    
+  }
+  
+  .laptop img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    
+  }
+}
+.sub-panel {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    align-items: center;
+  }
+.button{
+    border: 1px solid #9dd1ff;
+    border-radius: 10px;
+    color: #e1f1ff;
+    background-image: url("code.jpg");
+    display: inline-block;
+    padding: 20px 30px;
+    text-decoration: none;
+    margin: 25px 0;
+    transition: background-color 200ms ease-in-out;
+    font-size: 1em;
+}
+.para2{
+    font-size: 2em;
+}
+.button:hover, .button:focus{
+    background-image: url("code2.jpg");
+    color: #e1f1ff;
+
+}
+.third-block{
+    font-weight: 600;
+    letter-spacing: 1px;
+    
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: 1px solid #e1f1ff;
+}
+.second-heading{
+    text-align: center;
+    font-size: 3em;
+    font-family: cursive;
+}
+.third-block .para4{
+    font-size: 2em;
+}
+.contact{
+    background-color: blue;
+    color: cornsilk;
+    font-size: 1em;
+    font-family: cursive;
+}
+.about-us{
+    background-color: black;
+    color: blanchedalmond;
+    font-size: 1em;
+    font-family: cursive;
+
+}
+.footer{
+    background-color: black;
+    color: blanchedalmond;
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 1em;
+}
+.footer span{
+    color: blue;
+}
+.third-block .para-4{
+    font-size: 2em;
+    text-align: center;
+    align-content: center;
+    
+}
+.details{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+
+}
+.contact {
+    
+    border-radius: 10px;
+    padding-top: 2em;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .about-us{
+    border-radius: 10px;
+    padding-top: 2em;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  @media (max-width: 1200px) {
+    .laptop {
+      flex: 40%;
+      flex-wrap: wrap;
+      max-width: 50%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .laptop {
+      flex: 50%;
+      max-width: 100%;
+    }
+  }

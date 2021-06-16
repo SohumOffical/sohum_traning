@@ -1,0 +1,273 @@
+body{
+    margin: 0px;
+    font-family: Arial,sans-serif;
+}
+
+/*Main-header*/
+
+
+.main-header{
+    font-family: Arial;
+    font-size: 20px;
+    text-align: center;
+    background: url("img/hader2.jpg");
+    background-size: cover;
+    color: white;
+    margin: 0;
+}
+.main-header h1{
+    margin: 0px;
+}
+.main-header span{
+    background: crimson;
+}
+.main-header h1 img{
+    transform: translateY(20px);
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+}
+.main-header p{
+    margin-left: 35px;
+    margin-top: 15px;
+    margin-bottom:0px;
+}
+
+/*main-nav */
+
+.main-nav{
+    background-color: #4387fc;
+    overflow: hidden;
+}
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.main-nav ul li{
+    float: left;
+}
+.main-nav ul li a{
+    margin: 0px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 14px 25px;
+    display: block;
+    color: white;
+}
+.main-nav ul li a:hover{
+    background-color: #3c5f87;
+}
+.main-nav ul li a.active{
+    background-color: teal;
+}
+.main-nav ul li i {
+    color:#98e3ff;
+}
+/*latest news*/
+
+.news{
+    background-color:lightblue;
+    margin: 0px;
+    color: white;
+    animation: news 1s linear infinite;
+    overflow: hidden;
+    padding: 3px;
+}
+.news p{
+    font-size: 18px;
+    margin: 0;
+    animation: para 6s infinite linear;
+    overflow: hidden;
+}
+.news span{
+    color: crimson;
+}
+@keyframes news {
+    0%,50%{
+       background-color: #5FCE5C;
+
+    }
+    25%,75%,100%{
+        background-color: gray;
+    }
+}
+@keyframes para {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-20%);
+    }
+}
+/*main-info*/
+.main-info-section{
+
+}
+.main-info-article{
+    border: 2px solid green;
+    text-align: center;
+    padding: 5px;
+    margin: 20px;
+    width: 395px;
+    height: 540px;
+    float: left;
+    overflow: hidden;
+}
+.main-info-article:hover{
+    border: 2px solid black;
+    cursor: pointer;
+    background: teal;
+    color: white;
+    box-shadow: 0 0 15px forestgreen;
+}
+
+.main-info-article img{
+    width: 300px;
+    height: 240px;
+    width: 100%;
+    transition: all 5s;
+
+}
+.main-info-article img:hover{
+   max-width: 100%;
+    max-height: 100%;
+    transform: scale(1.1,1.1);
+}
+/* contact-section*/
+.contact-section{
+    margin-left: 220px;
+
+
+
+}
+.contact-article{
+    border: 2px solid green;
+    padding: 5px;
+    margin: 30px;
+    width: 400px;
+    height: 400px;
+    float: left;
+    border-radius:20px ;
+    text-align: center;
+    font-size: 18px;
+
+}
+.contact-article h1{
+    color: #4387fc;
+
+}
+.contact-article:hover{
+    color: white;
+}
+.contact-article:hover{
+    background: teal;
+    border-color: #090C01;
+    box-shadow: 0 0 15px green;
+    color: white;
+}
+.contact-article:hover h1{
+    color: white;
+}
+.contact-form input[type='text'],input[type='email'],textarea{
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid green;
+    width: 220px;
+    border-radius: 25px;
+    background: white;
+    outline: none;
+    height: 20px;
+    text-align: center;
+
+}
+::placeholder{
+    color: blue;
+}
+.contact-form textarea{
+    height: 80px;
+}
+.contact-form input[type='submit']{
+    font-size: 16px;
+    padding: 7px 20px;
+    outline: none;
+    color: blue;
+    border-radius: 50px;
+    border: none;
+}
+.contact-form input[type='submit']:hover{
+    background: forestgreen;
+    color: white;
+    cursor: pointer;
+}
+/*Aboutus section */
+.about-section{
+
+}
+.aboutus-article{
+    border: 2px solid green;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+.clients{
+    text-align: center;
+    overflow: hidden;
+
+}
+.aboutus-article img{
+    max-width: 300px;
+    max-height: 150px;
+    border-radius: 25px;
+    box-shadow: 0 0 15px green;
+    margin: 5px;
+    transition: all 3s;
+
+}
+.aboutus-article:hover{
+    background: teal;
+    border-color: #090C01;
+    box-shadow: 0 0 15px green;
+    color: white;
+}
+
+
+
+
+
+
+
+.break{
+    clear: both;
+}
+
+
+/*main -footer */
+.main-footer {
+    text-align: center;
+    background:url("img/hader2.jpg")  ;
+    background-size: cover;
+    color: white;
+}
+.main-footer p a{
+    text-decoration: none;
+    color: white;
+    background: #4387fc;
+}
+.main-footer p,h3{
+    margin: 0px;
+    padding: 5px;
+}
+.main-footer p{
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+

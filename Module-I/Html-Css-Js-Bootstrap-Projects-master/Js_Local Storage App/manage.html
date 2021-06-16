@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Local Storage Demo</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet " href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/fontawesome-all.css">
+</head>
+<body>
+<header>
+    <h1 class="text-center text-white p-3 bg-success">Manage Form :)</h1>
+</header>
+
+<section class="">
+    <div class="container">
+        <div class="mt-3 mx-auto">
+            <form class="border p-3">
+                <div class="form-group clearfix ">
+                    <h1 class="text-primary">Manage User :)</h1>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>name</th>
+                                <th>email</th>
+                                <th>mobile</th>
+                                <th>pass</th>
+                                <th>gender</th>
+                                <th>country</th>
+                                <th>address</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="tuser"></td>
+                                <td id="temail"></td>
+                                <td id="tmobile"></td>
+                                <td id="tpass"></td>
+                                <td id="tgender"></td>
+                                <td id="tcountry"></td>
+                                <td id="taddress"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <input type="button" id="edit" value="Edit" class="btn btn-outline-primary">
+                    <input type="button" id="remove" value="Remove" class="btn btn-outline-danger">
+                    <a href="home.html" class="btn btn-outline-dark float-right">Home</a>
+
+                    <!---edit-->
+
+                    <div class="w-50 mt-3 mx-auto" id="efrom" style="display:none">
+                        <form class="border p-3" >
+                            <div class="form-group clearfix ">
+                                <input id="name" class="form-control" type="text" placeholder="Enter ur name">
+                                <input id="email" class="form-control" type="email" placeholder="Enter ur Email" >
+                                <input id="mobile" class="form-control" type="tel" maxlength="10" placeholder="Enter ur mobile no" >
+                                <input id="pass" class="form-control" type="password" placeholder="Enter ur Password">
+                                <input id="repass" class="form-control" type="password" placeholder="Enter ur Password">
+                                <div>
+                                    <label for="genmale" class="mr-4">Gender:</label>
+                                    <input id="genmale"  type="radio" value="male" name="gender"> Male
+                                    <input id="genfemale" class="ml-4" value="female" type="radio" name="gender"> Female
+                                </div>
+                                <div>
+                                    <label for="cou">Country:</label>
+                                    <select id="cou" class="ml-5">
+                                        <option value="">Select</option>
+                                        <option value="india">India</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <label for="add">Address:</label>
+                                <textarea id="address" cols="30" rows="5" ></textarea>
+                                <input type="button" id="btn" value="Submit" class="btn btn-success">
+                                <a href="Login.html" class="btn btn-outline-primary float-right">Login</a>
+                                <p class="text-danger font-weight-bold">Note:-Use Developer option -> Application To see local stored data</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-success text-center text-white mt-3">
+    <h1>All Rights Reserved</h1>
+    <h2>Copy&copy;rights 2k18</h2>
+    <p class="mb-0">Made by <i class="fa fa-user-circle"></i>
+        <a href="https://github.com/Aadeshkale" target="_blank" class="text-white">Aadesh</a>
+    </p>
+</footer>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/fontawesome-all.js"></script>
+<script src="bootstrap/js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap/js/mdb.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="manage.js"></script>
+</body>
+</html>

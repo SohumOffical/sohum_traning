@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/css/fontawesome-all.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+<!--Main Navigation-->
+<div id="main-navigation"></div>
+<!--Setting section-->
+<section class="p-3 bg-teal text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1><i class="fa fa-user-circle"></i> Settings</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Setting button section-->
+<section class="p-3 mt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="index.html" class="btn btn-secondary btn-block">
+                    <i class="fa fa-arrow-alt-circle-left"></i> Dashboard</a>
+            </div>
+            <div class="col-md-3">
+                <!--empty-->
+            </div>
+            <div class="col-md-3">
+                <!--empty-->
+            </div>
+            <div class="col-md-3">
+                <a href="index.html" class="btn btn-success btn-block"><i class="fa fa-check-circle"></i>Save Changes</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Main Setting Section-->
+<section class="p-3">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header bg-warning text-white">
+                        <h2>Edit Seetings</h2>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <fieldset class="form-group">
+                                <legend>Allow user registration</legend>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="registration" class="form-check-input" value="yes" checked>
+                                        Yes</label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="registration" class="form-check-input" value="no" checked>
+                                        No</label>
+                                </div>
+
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <legend>Homepage Format</legend>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="format" class="form-check-input" value="posts" checked> Post Index
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio"  name="format" class="form-check-input" value="page"> Single Page
+                                    </label>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Main Footer-->
+<div id="main-footer"></div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- BODY ENDS -->
+<script src="bootstrap/js/fontawesome-all.js"></script>
+<script src="bootstrap/js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/mdb.min.js"></script>
+<script src="https://cdn.ckeditor.com/4.8.0/standard/ckeditor.js"></script>
+<script src="script.js"></script>
+<script>
+    CKEDITOR.replace( 'editor1' );
+</script>
+</body>
+</html>

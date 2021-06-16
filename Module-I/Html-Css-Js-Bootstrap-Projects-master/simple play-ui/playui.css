@@ -1,0 +1,96 @@
+body{
+    font-family: "Comic Sans MS";
+    margin: 0px;
+    background: lightyellow;
+}
+#header{
+    color: crimson;
+}
+#header2{
+    background: crimson;
+    color: white;
+}
+header,footer{
+    text-align: center;
+    background: lightblue;
+    margin: 0px;
+    padding: 0px;
+}
+.title{
+    margin: 0px;
+}
+nav{
+    background-color: lightcoral;
+    overflow: hidden;
+
+}
+nav ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+nav ul li{
+    float: left;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    margin: 0px;
+    display: inline-block;
+
+}
+nav ul li a:hover{
+    background: crimson;
+    color: white;
+}
+aside{
+    background: lightsalmon;
+    float: left;
+   // height: 700px;
+}
+aside ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+}
+aside ul li a{
+        text-decoration: none;
+        color: black;
+        padding: 15px 25px;
+        display: block;
+}
+aside ul li a:hover{
+    background: lightgreen;
+    color: darkgreen;
+}
+section{
+    margin-left: 120px;
+    background: lightyellow;
+
+}
+section details{
+    margin: 25px;
+    background: lightgreen;
+    border-radius: 5px;
+    padding: 10px;
+}
+section details p{
+    background: lightsalmon;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 10px;
+}
+section details h3{
+    color: red;
+}
+footer{
+    margin-top: 30px;
+}
+
+
+
+
+
